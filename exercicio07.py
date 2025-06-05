@@ -3,6 +3,7 @@
 
 # Aprovado (>=7)
 # Em treinamento (>=5 e <7)
-# Reprovado (<5)
-
-
+# Reprovado (<)
+meta_03 = int(input("digite a avaliação 03"))
+meta_02 = int(input("digite a avaliação 02"))
+meta_01 = int(input("digite a avaliação 01"))
