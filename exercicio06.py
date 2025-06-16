@@ -4,7 +4,7 @@ controle_acesso = int(input("digite o horario que voce esta tentando acessar a p
 
 if controle_acesso == 9:
     print("horario autorizado")
-elif controle_acesso == 21:
+elif controle_acesso <= 21:
     print("horario autorizado")
 else:
     print("horario não autorizado")        
