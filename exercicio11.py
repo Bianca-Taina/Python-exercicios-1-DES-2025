@@ -6,6 +6,15 @@
 #Sobrepeso (25 a 29.9)
 #Obesidade (>= 30)
 altura = float(input("digite sua altura em metros."))
-peso = float(input("digite seu peso em km."))
+peso = float(input("digite seu peso em kg."))
 
-imc = peso /
+imc = peso / (altura ** 2)
+
+if peso < 18.5:
+    print("abaixo do peso.")
+elif peso >= 18.5 <= 24.9:
+    print("peso normal.")
+elif peso >= 25 <= 29.9:
+    print("sobre peso.")
+else:
+    print("obesidade.")            
