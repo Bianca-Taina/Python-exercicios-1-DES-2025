@@ -5,18 +5,17 @@
 #Peso normal (18.5 a 24.9)
 #Sobrepeso (25 a 29.9)
 #Obesidade (>= 30)
-altura = float(input("digite sua altura em metros."))
-peso = float(input("digite seu peso em kg."))
 
-imc = (peso / (altura * altura))
-
-print(imc)
+altura = float(input("Digite sua altura em metros: "))
+peso = float(input("Digite seu peso em kg: "))
+imc = peso / (altura * altura)
+print(f"Este é o IMC: {imc}")
 
 if imc < 18.5:
-    print("abaixo do peso.")
-elif imc >= 18.5 <= 24.9:
-    print("peso normal.")
-elif imc >= 25 <= 29.9:
-    print("sobre peso.")
+    print("Abaixo do peso.")
+elif 18.5 <= imc <= 24.9:
+    print("Peso normal.")
+elif 25 <= imc <= 29.9:
+    print("Sobrepeso.")
 else:
-    print("obesidade.")            
+    print("Obesidade.")
